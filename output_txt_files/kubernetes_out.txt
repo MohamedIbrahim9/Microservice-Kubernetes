@@ -1,1 +1,20 @@
-<paste log output from Kubernetes-mediated prediction, here>
+1- Kubernetes ouptut from running ./run_kebernetes.sh script 
+
+pod/my-python-app-66c4d6dd48-m895k created
+Waiting for pod to be available ...
+NAME                             READY   STATUS    RESTARTS   AGE
+my-python-app-66c4d6dd48-m895k   1/1     Running   0          2m24s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+
+
+
+ 2-output from ./make_prediction.sh script 
+
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
